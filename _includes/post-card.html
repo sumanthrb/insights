@@ -13,8 +13,13 @@
     <!-- 
     This is a comment 
     <a href="/tags/#{{ tag | slugify }}" class="tag">#{{ tag }}</a>
-    -->
     <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag"></a>
+  -->
+    <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" 
+    class="tag" 
+    style="color:#e0e0e0;">
+    #{{ tag }}
+    </a>
     {% endfor %}
   </div>
   {% endif %}
