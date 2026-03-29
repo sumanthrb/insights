@@ -38,7 +38,7 @@
   --accent-soft:  #2a1a10;
   --border:       #2a2a30;
   --tag-bg:       #222228;
-  --tag-text:     #aaa;
+  --tag-text:     #e0e0e0;
   --link:         #f07040;
   --shadow:       0 1px 4px rgba(0,0,0,0.4);
   --shadow-md:    0 4px 20px rgba(0,0,0,0.5);
@@ -238,7 +238,7 @@ a:hover { text-decoration: underline; }
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   background: var(--tag-bg);
-  color: var(--tag-text);
+  color: var(--text);
   font-size: 0.78rem;
   font-family: var(--mono);
   font-weight: 600;
