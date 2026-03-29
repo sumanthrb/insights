@@ -1,0 +1,51 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <p class="hero__eyebrow">// {{ site.title }}</p>
+  <h1 class="hero__title">{{ site.description }}</h1>
+  <p class="hero__subtitle">Deep dives into software engineering, architecture, tools, and the craft of building things that last.</p>
+</section>
+
+<div id="search-wrap" style="display:none">
+  <div class="search-wrap">
+    <div class="search-inner">
+      <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="search" id="search-input" class="search-input" placeholder="Search posts, tags…" autocomplete="off">
+    </div>
+    <div id="search-results"></div>
+  </div>
+</div>
+
+{% assign all_tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+{% if all_tags.size > 0 %}
+<div class="tags-bar">
+  <div class="tags-bar__inner">
+    <span style="font-family:var(--mono);font-size:.75rem;color:var(--text-muted);margin-right:.5rem">Filter:</span>
+    {% for tag in all_tags %}
+    {% if tag != "" %}
+    <a href="/tags/#{{ tag | slugify }}" class="tag">#{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<section class="posts-section">
+  <div class="posts-section__inner">
+    <p class="section-label">// Latest Posts</p>
+    <div class="posts-grid">
+      {% for post in site.posts %}
+        {% if forloop.first %}
+          {% include post-card.html post=post featured=true %}
+        {% else %}
+          {% include post-card.html post=post %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

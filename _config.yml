@@ -1,0 +1,52 @@
+title: "DevLog"
+description: "Thoughts on code, systems, and the craft of building software."
+author:
+  name: "Your Name"
+  bio: "Engineer. Builder. Thinker."
+  github: "yourusername"
+  twitter: "yourhandle"
+  email: "you@example.com"
+
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: null
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Pagination
+paginate: 6
+paginate_path: "/page/:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
