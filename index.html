@@ -28,7 +28,10 @@ title: Home
     <span style="font-family:var(--mono);font-size:.75rem;color:var(--text-muted);margin-right:.5rem">Filter:</span>
     {% for tag in all_tags %}
     {% if tag != "" %}
+    <!--
     <a href="/tags/#{{ tag | slugify }}" class="tag">#{{ tag }}</a>
+  -->
+    <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag"></a>
     {% endif %}
     {% endfor %}
   </div>

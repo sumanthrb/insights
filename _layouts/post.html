@@ -8,7 +8,10 @@ layout: default
   {% if page.tags %}
   <div class="post-header__tags">
     {% for tag in page.tags %}
+    <!--
     <a href="/tags/#{{ tag | slugify }}" class="tag">#{{ tag }}</a>
+  -->
+    <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag"></a>
     {% endfor %}
   </div>
   {% endif %}

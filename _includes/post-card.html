@@ -10,7 +10,11 @@
   {% if post.tags %}
   <div class="post-card__tags">
     {% for tag in post.tags limit:3 %}
+    <!-- 
+    This is a comment 
     <a href="/tags/#{{ tag | slugify }}" class="tag">#{{ tag }}</a>
+    -->
+    <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag"></a>
     {% endfor %}
   </div>
   {% endif %}
