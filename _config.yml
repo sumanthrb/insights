@@ -1,11 +1,11 @@
 title: "DevLog"
 description: "Thoughts on code, systems, and the craft of building software."
 author:
-  name: "Your Name"
+  name: "SUMANTH BATHULA"
   bio: "Engineer. Builder. Thinker."
-  github: "yourusername"
-  twitter: "yourhandle"
-  email: "you@example.com"
+  github: "sumanthrb"
+  linkedin: "sumanthrb"
+  email: "sumanthrb@gmail.com"
 
 url: "https://sumanthrb.github.io"
 baseurl: "/insights"
