@@ -238,7 +238,7 @@ a:hover { text-decoration: underline; }
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   background: var(--tag-bg);
-  color: var(--text);
+  color: #e0e0e0 !important;
   font-size: 0.78rem;
   font-family: var(--mono);
   font-weight: 600;
@@ -248,7 +248,7 @@ a:hover { text-decoration: underline; }
 }
 .tag:hover, .tag.active {
   background: var(--accent);
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
