@@ -7,8 +7,8 @@ author:
   twitter: "yourhandle"
   email: "you@example.com"
 
-url: "https://yourusername.github.io"
-baseurl: ""
+url: "https://sumanthrb.github.io"
+baseurl: "/insights"
 
 # Build settings
 markdown: kramdown
