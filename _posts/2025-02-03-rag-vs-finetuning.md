@@ -6,7 +6,7 @@ tags: [RAG,intelligent-systems]
 description: "A practical decision framework for choosing between Retrieval-Augmented Generation and fine-tuning — built from real production experience."
 ---
 
-Every team building with LLMs hits the same fork in the road: do we fine-tune the model, or do we bolt on retrieval? We've been down both paths — sometimes the right way, sometimes the hard way. This post is the decision framework we wish we'd had earlier.
+Every team developing with LLMs hits the same fork in the road: do we fine-tune the model, or do we bolt on retrieval?
 
 ---
 
