@@ -3,7 +3,7 @@ layout: post
 title: "RAG vs Fine-tuning: When to Use Which (and When Neither)"
 date: 2025-02-03
 tags: [RAG,intelligent-systems]
-description: "A practical decision framework for choosing between Retrieval-Augmented Generation and fine-tuning — built from real production experience."
+description: "A practical decision framework for choosing between Retrieval-Augmented Generation and fine-tuning;  built from real production experience."
 ---
 
 Every team developing with LLMs hits the same fork in the road: do we fine-tune the model, or do we bolt on retrieval?
@@ -12,7 +12,7 @@ Every team developing with LLMs hits the same fork in the road: do we fine-tune 
 
 ## What RAG actually does (and doesn't do)
 
-Retrieval-Augmented Generation fetches relevant chunks from an external knowledge source and stuffs them into the LLM's context window at inference time. Think of it like giving the model an open-book exam — the answer is in the room, the model just needs to find and use it.
+Retrieval-Augmented Generation fetches relevant chunks from an external knowledge source and stuffs them into the LLM's context window at inference time. Think of it like giving the model an open-book exam ; the answer is in the room, the model just needs to find and use it.
 
 ```
 User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context → Answer
@@ -20,13 +20,13 @@ User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context 
 *RAG Architecture: knowledge lives outside the model, injected at query time.*
 
 **RAG is the right call when:**
-- Our knowledge base changes frequently — product docs, policy updates, live data
+- Our knowledge base changes frequently : product docs, policy updates, live data
 - We need source attribution and want to cite where the answer came from
 - We're working with proprietary documents the base model never saw
-- Budget is tight — RAG avoids expensive GPU training runs
+- Budget is tight : RAG avoids expensive GPU training runs
 
 **RAG struggles when:**
-- The answer requires synthesising across hundreds of chunks — context gets noisy
+- The answer requires synthesising across hundreds of chunks, context gets noisy
 - Latency matters — retrieval adds round-trip overhead
 - We want the model to *behave* differently, not just know more
 
@@ -74,7 +74,7 @@ We use this table as a quick gut-check before committing to either approach. It 
 
 ## When neither is the answer
 
-We've seen teams spend months fine-tuning a model to return JSON — when simply adding *"respond only in valid JSON"* to the system prompt would have done the job. The discipline is knowing when to reach for infrastructure and when the answer is just better prompting craft.
+We've seen teams spend months fine-tuning a model to return JSON, when simply adding *"respond only in valid JSON"* to the system prompt would have done the job. The discipline is knowing when to reach for infrastructure and when the answer is just better prompting craft.
 
 **Specific cases where neither helps:**
 - Hallucination caused by ambiguous user input :  fix the input, not the model
