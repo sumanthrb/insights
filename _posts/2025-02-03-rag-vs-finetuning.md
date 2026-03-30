@@ -26,14 +26,14 @@ Retrieval-Augmented Generation fetches relevant chunks from an external knowledg
 
 **RAG struggles when:**
 - The answer requires synthesising across hundreds of chunks, context gets noisy
-- Latency matters — retrieval adds round-trip overhead
+- Latency matters : retrieval adds round-trip overhead
 - We want the model to *behave* differently, not just know more
 
 ---
 
 ## What fine-tuning actually does (and doesn't do)
 
-Fine-tuning updates the model's weights using domain-specific examples. The model internalises patterns — tone, format, reasoning style — so it doesn't need to be told every time. Think of it like hiring an employee and training them for months vs. handing a contractor a brief each morning.
+Fine-tuning updates the model's weights using domain-specific examples. The model internalises patterns : tone, format, reasoning style; so it doesn't need to be told every time. Think of it like hiring an employee and training them for months vs. handing a contractor a brief each morning.
 
 ![fine-tune Diagram]({{ 'images/fine-tune.png' | relative_url }})
 
@@ -57,15 +57,12 @@ Fine-tuning updates the model's weights using domain-specific examples. The mode
 
 We use this table as a quick gut-check before committing to either approach. It covers 80% of real-world scenarios:
 
-| Scenario | Fine-tune? | RAG? | Example |
-|---|---|---|---|
-| Static domain knowledge | (OK) Fine-tune | ⚠️ RAG works | Domain-specific NLP |
-| Proprietary / fresh docs |(NOK) Overkill | (OK) RAG | Internal wikis, PDFs |
-| Factual Q&A over corpus | (NOK) Stale fast | (OK) RAG | Support bots |
-| Tone / style / persona | (OK) Fine-tune | (NOK) Won't help | Brand voice AI |
-| Latency-sensitive prod | (OK)Fine-tune | ⚠️ Overhead  | Real-time apps |
-| Small training data | (NOK) Will overfit | (OK) RAG | Niche use cases |
-| Regulatory compliance | ⚠️ Risky alone | ⚠️ Risky alone | Consider neither alone |
+| Scenario                     | RAG          | Fine-tune     | Neither        |
+|-----------------------------|--------------|---------------|----------------|
+| Frequently updated docs     |    Yes       | Stale fast    | —              |
+| Consistent tone / persona   |    Won’t help| Yes           | —              |
+| Latency-sensitive product   |    Overhead  | Faster        | —              |
+| Output format / JSON        |    NO        | Overkill      |    Just prompt |
 
 ---
 
@@ -107,6 +104,6 @@ Frequent changes → RAG (no retraining). Static domain → fine-tuning is viabl
 
 **3. Can prompt engineering get us 80% there?**
 
-If yes — ship it. Revisit RAG/fine-tuning only when we hit that ceiling.
+If yes, ship it. Revisit RAG/fine-tuning only when we hit that ceiling.
 
 ---
