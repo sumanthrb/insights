@@ -18,7 +18,7 @@ Retrieval-Augmented Generation fetches relevant chunks from an external knowledg
 User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context → Answer
 ```
 
-<img width="1296" height="236" alt="image" src="/images/RAG.PNG" />
+<img width="1296" height="100" alt="image" src="/images/RAG.PNG" />
 
 
 *RAG Architecture: knowledge lives outside the model, injected at query time.*
