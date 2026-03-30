@@ -2,7 +2,9 @@
 layout: post
 title: "Why Most DevOps Transformations Fail"
 date: 2025-05-18
-categories: devops platform-engineering
+tags: [DevOps ]
+excerpt: "evops platform-engineering."
+
 ---
 
 > DevOps isn’t failing.  
