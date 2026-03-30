@@ -708,11 +708,20 @@ a:hover { text-decoration: underline; }
 .hero__photo {
   flex-shrink: 0;
 }
-
+/*---
 .hero__photo img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-soft);
+}
+----*/
+.hero__photo img {
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
   object-fit: cover;
   border: 3px solid var(--accent);
   box-shadow: 0 0 0 6px var(--accent-soft);
