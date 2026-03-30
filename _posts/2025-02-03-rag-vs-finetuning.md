@@ -13,12 +13,11 @@ Every team developing with LLMs hits the same fork in the road: do we fine-tune 
 ## What RAG actually does (and doesn't do)
 
 Retrieval-Augmented Generation fetches relevant chunks from an external knowledge source and stuffs them into the LLM's context window at inference time. Think of it like giving the model an open-book exam ; the answer is in the room, the model just needs to find and use it.
-
+<!--
 ```
 User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context → Answer
 ```
-
-<!--<img src="/images/RAG.png" alt="Fine tune image" width="1296" height="236"> -->
+-->
 
 ![RAG Diagram]({{ 'images/RAG.png' | relative_url }})
 
@@ -41,12 +40,16 @@ User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context 
 
 Fine-tuning updates the model's weights using domain-specific examples. The model internalises patterns — tone, format, reasoning style — so it doesn't need to be told every time. Think of it like hiring an employee and training them for months vs. handing a contractor a brief each morning.
 
+<!--
 ```
 
 Training Data + Base Model  →  Fine-tuning Process  →  Custom Model Weights  →  Query → Direct Answer
 
 ```
-<img src="/images/fine-tune.png" alt="Fine tune image" width="1296" height="236">
+-->
+
+![RAG Diagram]({{ 'images/fine-tune.png' | relative_url }})
+
 
 *Fine-tuning Architecture: behaviour is baked into the model itself.*
 
