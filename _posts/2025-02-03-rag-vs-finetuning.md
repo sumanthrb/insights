@@ -106,5 +106,3 @@ Frequent changes → RAG (no retraining). Static domain → fine-tuning is viabl
 **3. Can prompt engineering get us 80% there?**
 
 If yes, ship it. Revisit RAG/fine-tuning only when we hit that ceiling.
-
----
