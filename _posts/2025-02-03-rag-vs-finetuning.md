@@ -62,12 +62,12 @@ We use this table as a quick gut-check before committing to either approach. It 
 
 | Scenario | Fine-tune? | RAG? | Example |
 |---|---|---|---|
-| Static domain knowledge | ✅ Fine-tune | ⚠️ RAG works | Domain-specific NLP |
-| Proprietary / fresh docs | ❌ Overkill | ✅ RAG | Internal wikis, PDFs |
-| Factual Q&A over corpus | ❌ Stale fast | ✅ RAG | Support bots |
-| Tone / style / persona | ✅ Fine-tune | ❌ Won't help | Brand voice AI |
-| Latency-sensitive prod | ✅ Fine-tune | ⚠️ Adds overhead | Real-time apps |
-| Small training data | ❌ Will overfit | ✅ RAG | Niche use cases |
+| Static domain knowledge | ✅ (OK) Fine-tune | ⚠️ RAG works | Domain-specific NLP |
+| Proprietary / fresh docs | ❌ (NOK) Overkill | ✅(OK) RAG | Internal wikis, PDFs |
+| Factual Q&A over corpus | ❌ (NOK) Stale fast | ✅(OK) RAG | Support bots |
+| Tone / style / persona | ✅ (OK) Fine-tune | ❌ (NOK) Won't help | Brand voice AI |
+| Latency-sensitive prod | ✅ (OK)Fine-tune | ⚠️ Adds overhead | Real-time apps |
+| Small training data | ❌ (NOK) Will overfit | ✅(OK) RAG | Niche use cases |
 | Regulatory compliance | ⚠️ Risky alone | ⚠️ Risky alone | Consider neither alone |
 
 ---
