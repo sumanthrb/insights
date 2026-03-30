@@ -37,20 +37,22 @@ User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context 
 Fine-tuning updates the model's weights using domain-specific examples. The model internalises patterns — tone, format, reasoning style — so it doesn't need to be told every time. Think of it like hiring an employee and training them for months vs. handing a contractor a brief each morning.
 
 ```
+
 Training Data + Base Model  →  Fine-tuning Process  →  Custom Model Weights  →  Query → Direct Answer
+
 ```
 *Fine-tuning Architecture: behaviour is baked into the model itself.*
 
 **Fine-tuning is the right call when:**
 - We need consistent tone, persona, or output format across all responses
-- The task is narrow and well-defined — classification, code generation in a specific style
+- The task is narrow and well-defined : classification, code generation in a specific style
 - We have high-quality labelled examples (hundreds to thousands)
-- Latency is critical — no retrieval step means faster responses
+- Latency is critical : no retrieval step means faster responses
 
 **Fine-tuning struggles when:**
-- Our data changes — fine-tuned knowledge goes stale and retraining is expensive
-- We have fewer than a few hundred quality examples — the model will overfit
-- We need explainability — *"why did it say that?"* becomes much harder to answer
+- Our data changes : fine-tuned knowledge goes stale and retraining is expensive
+- We have fewer than a few hundred quality examples, the model will overfit
+- We need explainability,  *"why did it say that?"* becomes much harder to answer
 
 ---
 
@@ -71,12 +73,6 @@ We use this table as a quick gut-check before committing to either approach. It 
 ---
 
 ## When neither is the answer
-
-This is the part most blog posts skip. Sometimes the honest answer is: **the problem isn't a model problem.**
-
-> ⚠️ **Before reaching for RAG or fine-tuning, ask these first:**
->
-> Does better prompting solve this? Have we tried chain-of-thought, few-shot examples, or structured output formatting? Is the failure consistent or edge-case noise? Often a well-crafted system prompt gets us 90% of the way there — at zero infrastructure cost.
 
 We've seen teams spend months fine-tuning a model to return JSON — when simply adding *"respond only in valid JSON"* to the system prompt would have done the job. The discipline is knowing when to reach for infrastructure and when the answer is just better prompting craft.
 
