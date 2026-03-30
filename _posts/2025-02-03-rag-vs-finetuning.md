@@ -20,7 +20,7 @@ User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context 
 
 <!--<img src="/images/RAG.png" alt="Fine tune image" width="1296" height="236"> -->
 
-![AI Agent Loop Diagram]({{ '/images/RAG.png' | relative_url }})
+![RAG Diagram]({{ '/images/RAG.png' | relative_url }})
 
 
 *RAG Architecture: knowledge lives outside the model, injected at query time.*
