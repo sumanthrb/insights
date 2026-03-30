@@ -77,16 +77,16 @@ We use this table as a quick gut-check before committing to either approach. It 
 We've seen teams spend months fine-tuning a model to return JSON — when simply adding *"respond only in valid JSON"* to the system prompt would have done the job. The discipline is knowing when to reach for infrastructure and when the answer is just better prompting craft.
 
 **Specific cases where neither helps:**
-- Hallucination caused by ambiguous user input — fix the input, not the model
-- Slow responses — likely an infrastructure or streaming issue, not a model issue
-- Model "doesn't understand our domain" — often fixable with few-shot examples in context
-- Regulated outputs with legal liability — neither approach provides hard guarantees; consider guardrails + human review
+- Hallucination caused by ambiguous user input :  fix the input, not the model
+- Slow responses : likely an infrastructure or streaming issue, not a model issue
+- Model "doesn't understand our domain" : often fixable with few-shot examples in context
+- Regulated outputs with legal liability :  neither approach provides hard guarantees; consider guardrails + human review
 
 ---
 
 ## The hybrid: when we use both
 
-In practice, the most robust production systems we've architected combine both. Fine-tune for behaviour and style consistency; use RAG for dynamic knowledge grounding. The fine-tuned model already knows *how* to respond — RAG just gives it the right material to work with.
+In practice, the most robust production systems we've architected combine both. Fine-tune for behaviour and style consistency; use RAG for dynamic knowledge grounding. The fine-tuned model already knows *how* to respond, RAG just gives it the right material to work with.
 
 | Fine-tune handles… | RAG handles… |
 |---|---|
@@ -101,12 +101,15 @@ In practice, the most robust production systems we've architected combine both. 
 Before we touch a training pipeline or spin up a vector DB, we run through these three questions in order:
 
 **1. Is this a knowledge problem or a behaviour problem?**
+
 Knowledge → RAG first. Behaviour → fine-tuning first.
 
 **2. How often does the knowledge change?**
+
 Frequent changes → RAG (no retraining). Static domain → fine-tuning is viable.
 
 **3. Can prompt engineering get us 80% there?**
+
 If yes — ship it. Revisit RAG/fine-tuning only when we hit that ceiling.
 
 ---
