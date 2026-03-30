@@ -17,6 +17,10 @@ Retrieval-Augmented Generation fetches relevant chunks from an external knowledg
 ```
 User Query  →  Retriever (Vector DB)  →  Context Chunks  →  LLM + Context → Answer
 ```
+
+<img width="1296" height="236" alt="image" src="/images/RAG.PNG" />
+
+
 *RAG Architecture: knowledge lives outside the model, injected at query time.*
 
 **RAG is the right call when:**
@@ -41,6 +45,8 @@ Fine-tuning updates the model's weights using domain-specific examples. The mode
 Training Data + Base Model  →  Fine-tuning Process  →  Custom Model Weights  →  Query → Direct Answer
 
 ```
+<img width="1296" height="236" alt="image" src="/images/fine-tune.PNG" />
+
 *Fine-tuning Architecture: behaviour is baked into the model itself.*
 
 **Fine-tuning is the right call when:**
