@@ -6,7 +6,8 @@ tags: [RAG,intelligent-systems]
 description: "A practical decision framework for choosing between Retrieval-Augmented Generation and fine-tuning;  built from real production experience."
 ---
 
-Every team developing with LLMs hits the same fork in the road: do we fine-tune the model, or do we bolt on retrieval?
+Choosing between RAG and fine-tuning isn’t always obvious.
+Here’s a practical guide to help you pick the right approach or skip both.
 
 ---
 
@@ -55,7 +56,7 @@ Fine-tuning updates the model's weights using domain-specific examples. The mode
 
 ## The decision matrix
 
-We use this table as a quick gut-check before committing to either approach. It covers 80% of real-world scenarios:
+We use this table as a quick gut check before committing to either approach. It covers 80% of real world scenarios:
 
 | Scenario                     | RAG          | Fine-tune     | Neither        |
 |-----------------------------|--------------|---------------|----------------|
