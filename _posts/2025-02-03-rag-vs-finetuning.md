@@ -48,7 +48,7 @@ Training Data + Base Model  →  Fine-tuning Process  →  Custom Model Weights 
 ```
 -->
 
-![RAG Diagram]({{ 'images/fine-tune.png' | relative_url }})
+![fine-tune Diagram]({{ 'images/fine-tune.png' | relative_url }})
 
 
 *Fine-tuning Architecture: behaviour is baked into the model itself.*
