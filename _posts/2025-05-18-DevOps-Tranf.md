@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Most DevOps Transformations Fail"
-date: 2026-03-30
+date: 2025-05-18
 categories: devops platform-engineering
 ---
 
