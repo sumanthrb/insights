@@ -113,11 +113,3 @@ Frequent changes → RAG (no retraining). Static domain → fine-tuning is viabl
 If yes — ship it. Revisit RAG/fine-tuning only when we hit that ceiling.
 
 ---
-
-> 🏗️ **The bottom line**
->
-> The best AI systems we've built didn't start with RAG or fine-tuning. They started with a clear problem definition, good prompts, and an honest answer to *"what are we actually trying to fix?"* RAG and fine-tuning are powerful tools — but tools work best when we understand what nail we're driving.
-
----
-
-*What's your experience been? Have you hit a scenario where neither worked? Drop a comment on GitHub Discussions or find us at [@sumanthrb](https://github.com/sumanthrb).*
