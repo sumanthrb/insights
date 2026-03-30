@@ -2,13 +2,26 @@
 layout: default
 title: Home
 ---
-
+<!--
 <section class="hero">
   <p class="hero__eyebrow">// {{ site.title }}</p>
   <h1 class="hero__title">{{ site.description }}</h1>
-  <!--
-  <p class="hero__subtitle">Deep dives into software engineering, architecture, tools, and the craft of building things that last.</p>
+
+</section>
 -->
+
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__photo">
+      <img src="{{ '/images/profile.png' | relative_url }}" 
+           alt="Sumanth Reddy Bathula" />
+    </div>
+    <div class="hero__text">
+      <p class="hero__eyebrow">// {{ site.title }}</p>
+      <h1 class="hero__title">{{ site.description }}</h1>
+      <p class="hero__subtitle">Deep dives into software engineering, architecture, tools, and the craft of building things that last.</p>
+    </div>
+  </div>
 </section>
 
 <div id="search-wrap" style="display:none">
