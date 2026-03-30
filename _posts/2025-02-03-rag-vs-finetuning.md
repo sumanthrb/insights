@@ -10,16 +10,6 @@ Every team developing with LLMs hits the same fork in the road: do we fine-tune 
 
 ---
 
-## First, let's get the question right
-
-Most teams ask: *"Should we fine-tune or use RAG?"* But that's already the wrong frame. The real question is: **what failure mode are we trying to fix?**
-
-> 💡 **The mental shift that changes everything**
->
-> RAG fixes a **knowledge problem**. Fine-tuning fixes a **behaviour problem**. If we confuse the two, we'll spend weeks solving the wrong thing.
-
----
-
 ## What RAG actually does (and doesn't do)
 
 Retrieval-Augmented Generation fetches relevant chunks from an external knowledge source and stuffs them into the LLM's context window at inference time. Think of it like giving the model an open-book exam — the answer is in the room, the model just needs to find and use it.
