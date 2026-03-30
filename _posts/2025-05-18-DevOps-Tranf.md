@@ -3,7 +3,7 @@ layout: post
 title: "Why Most DevOps Transformations Fail"
 date: 2025-05-18
 tags: [DevOps ]
-excerpt: "evops platform-engineering."
+excerpt: "DevOps platform-engineering."
 
 ---
 
