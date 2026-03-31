@@ -12,26 +12,28 @@ excerpt: "DevOps platform-engineering."
 
 ---
 
-## 🚧 The Reality
+## The Reality 
 
+The Reality
 Almost every organization today claims to be “doing DevOps.”
 
-They have:
-- CI/CD pipelines ✅  
-- Cloud infrastructure ✅  
-- Kubernetes clusters ✅  
+On the surface, everything looks modern and well-equipped:
+  1.CI/CD pipelines are in place
+  2.Applications run on cloud infrastructure
+  3.Kubernetes clusters manage deployments
+It feels like DevOps has been adopted. 
 
-Yet…
+But scratch beneath the surface…
+  1.Releases are still slow and painful
+  2.Production incidents keep recurring
+  3.Debugging takes longer than expected
+  4.Developers are frustrated navigating complexity
+Despite all the right tools, outcomes haven’t improved.
 
-- Releases are still slow  
-- Incidents are frequent  
-- Developers are frustrated  
-
-So what’s going wrong?
-
+#### So What going wrong....?
 ---
 
-## ❌ 1. Tool-First, Not Problem-First
+## 1. Tool-First, Not Problem-First
 
 Most transformations start like this:
 
