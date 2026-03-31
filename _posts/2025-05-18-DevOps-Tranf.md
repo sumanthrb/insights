@@ -10,19 +10,18 @@ excerpt: "Many teams adopt DevOps in tools, but not in outcomes. This post explo
 
 The Reality is almost every organization today claims to be “doing DevOps.”
 
-On the surface, everything looks modern and well-equipped:
-  1.CI/CD pipelines are in place
-  2.Applications run on cloud infrastructure
-  3.Kubernetes clusters manage deployments
-It feels like DevOps has been adopted. 
+On the surface, everything looks modern and well-equipped:<br>
+  1.CI/CD pipelines are in place<br>
+  2.Applications run on cloud infrastructure<br>
+  3.Kubernetes clusters manage deployments<br>
+It feels like DevOps has been adopted.
 
-But scratch beneath the surface…
-  1.Releases are still slow and painful
-  2.Production incidents keep recurring
-  3.Debugging takes longer than expected
-  4.Developers are frustrated navigating complexity
+But scratch beneath the surface…<br>
+  1.Releases are still slow and painful<br>
+  2.Production incidents keep recurring<br>
+  3.Debugging takes longer than expected<br>
+  4.Developers are frustrated navigating complexity<br>
 Despite all the right tools, outcomes haven’t improved.
-
 #### So What going wrong....?
 
 ---
