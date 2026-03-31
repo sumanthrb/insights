@@ -3,7 +3,7 @@ layout: post
 title: "Why Most DevOps Transformations Fail"
 date: 2025-05-18
 tags: [DevOps ]
-excerpt: "DevOps platform-engineering."
+excerpt: "Many teams adopt DevOps in tools, but not in outcomes. This post explores why most transformations fall in short and how to fix them."
 
 ---
 
