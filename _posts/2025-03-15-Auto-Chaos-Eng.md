@@ -19,7 +19,7 @@ In doing so, Chaos becomes an integral part of how we build and run software: <b
 • Runtime operations <br>
 • Observability feedback loops <br>
 
-![fine-tune Diagram]({{ 'images/Chaos.png' | relative_url }})
+![fine-tune Diagram]({{ 'images/Chaos1.png' | relative_url }})
 
 ## Where Chaos Becomes Automated
 
