@@ -4,12 +4,11 @@ title: "Automated Chaos Engineering"
 date: 2025-04-10
 tags: [SRE ]
 excerpt: "Automating Chaos Engineering turns failure testing into a continuous, measurable practice that builds resilience by design."
----
 
+---
 Automating Chaos Engineering is where it becomes truly powerful, we move from one-off experiments to a continuous reliability practice embedded into our delivery system.
 
-Let’s break it down architecturally and practically
-
+---
 ## Automated Chaos Engineering....
 
 We’re not randomly breaking systems, We are continuously validating that our systems behave correctly under failure ( i.e automatically, not manually).
@@ -25,6 +24,7 @@ In doing so, Chaos becomes an integral part of how we build and run software: <b
 
 <img src="{{ 'images/Chaos1.png' | relative_url }}" style="width: 50%;">
 
+----
 ## Where Chaos Becomes Automated
 
 **1. In CI/CD Pipelines (Shift-Left Chaos)** <br>
@@ -62,7 +62,6 @@ Guardrails: <br>
 • Auto-stop on SLO breach <br>
 
 ------
-
 ## Core Automation Principles 
 
 These will make chaos intentional and measurable, not random; and they turn failures into a continuous engine for resilience and improvement.
@@ -70,8 +69,5 @@ These will make chaos intentional and measurable, not random; and they turn fail
 ![fine-tune Diagram]({{ 'images/Chaosp.png' | relative_url }})
 
 ----
-
 Automation turns Chaos Engineering from interesting experiments into a continuous reliability engine.<br>
 When we do it right......the failures become predictable, systems improve automatically, and confidence in production scales with us.
-
------
