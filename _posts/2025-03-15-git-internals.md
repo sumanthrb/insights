@@ -1,11 +1,27 @@
 ---
 layout: post
-title: "Understanding Git Internals: How Commits Really Work"
-date: 2025-03-15
+title: "Automated Chaos Engineering"
+date: 2025-04-10
 tags: [git, internals, version-control]
 excerpt: "Most developers use Git daily without knowing how it actually works under the hood. Let's fix that."
 ---
 
+Automating Chaos Engineering is where it becomes truly powerful, we move from one-off experiments to a continuous reliability practice embedded into our delivery system.
+
+Let’s break it down architecturally and practically
+
+## What “Automated Chaos Engineering” ?
+
+We’re not randomly breaking systems, We are continuously validating that our systems behave correctly under failure ( i.e automatically, not manually).
+
+In doing so, Chaos becomes an integral part of how we build and run software:
+• CI/CD pipelines
+• Runtime operations
+• Observability feedback loops
+
+
+
+------------
 Most developers use Git daily without really knowing what's happening under the hood. Understanding Git's object model will make you a significantly better developer — you'll stop fearing rebases and actually understand what's happening when things go wrong.
 
 ## The Object Model
