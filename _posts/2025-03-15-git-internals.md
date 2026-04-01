@@ -14,12 +14,25 @@ Let’s break it down architecturally and practically
 
 We’re not randomly breaking systems, We are continuously validating that our systems behave correctly under failure ( i.e automatically, not manually).
 
-In doing so, Chaos becomes an integral part of how we build and run software:
-• CI/CD pipelines
-• Runtime operations
-• Observability feedback loops
+In doing so, Chaos becomes an integral part of how we build and run software: <br>
+• CI/CD pipelines<br>
+• Runtime operations <br>
+• Observability feedback loops <br>
 
+![fine-tune Diagram]({{ 'images/Chaos.png' | relative_url }})
 
+## Where Chaos Becomes Automated
+
+**1. In CI/CD Pipelines (Shift-Left Chaos)
+We embed chaos into deployment pipelines.
+What we do: <br>
+After deployment → trigger chaos experiment <br>
+Validate system health automatically<br>
+
+```bash
+Example: 
+Deploy → Run Chaos Test → Check SLOs → Promote / Rollback
+```
 
 ------------
 Most developers use Git daily without really knowing what's happening under the hood. Understanding Git's object model will make you a significantly better developer — you'll stop fearing rebases and actually understand what's happening when things go wrong.
