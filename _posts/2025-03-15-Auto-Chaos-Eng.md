@@ -21,6 +21,8 @@ In doing so, Chaos becomes an integral part of how we build and run software: <b
 
 ![fine-tune Diagram]({{ 'images/Chaos1.png' | relative_url }})
 
+<img src="{{ 'images/Chaos1.png' | relative_url }}" style="width: 50%;">
+
 ## Where Chaos Becomes Automated
 
 **1. In CI/CD Pipelines (Shift-Left Chaos)** <br>
