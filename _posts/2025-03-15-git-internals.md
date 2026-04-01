@@ -52,10 +52,10 @@ Friday → simulate DB lag
 **3. Continuous Chaos in Production (Safe Mode)**
 This is advanced, but highly effective. We run low-blast-radius experiments continuously.
 
-Guardrails:
-• Small % of traffic
-• Non-critical services first
-• Auto-stop on SLO breach
+Guardrails: <br>
+• Small % of traffic <br>
+• Non-critical services first <br>
+• Auto-stop on SLO breach <br>
 
 ------
 
@@ -67,7 +67,7 @@ These will make chaos intentional and measurable, not random; and they turn fail
 
 ----
 
-Automation turns Chaos Engineering from interesting experiments into a continuous reliability engine.
+Automation turns Chaos Engineering from interesting experiments into a continuous reliability engine.<br>
 When we do it right......the failures become predictable, systems improve automatically, and confidence in production scales with us.
 
 -----
