@@ -68,9 +68,6 @@ These will make chaos intentional and measurable, not random; and they turn fail
 ----
 
 Automation turns Chaos Engineering from interesting experiments into a continuous reliability engine.
-
 When we do it right......the failures become predictable, systems improve automatically, and confidence in production scales with us.
-------
 
- 
-elegant data structures in software engineering.
+-----
