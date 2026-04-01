@@ -10,7 +10,7 @@ Automating Chaos Engineering is where it becomes truly powerful, we move from on
 
 Let’s break it down architecturally and practically
 
-## What “Automated Chaos Engineering” ?
+## Automated Chaos Engineering....
 
 We’re not randomly breaking systems, We are continuously validating that our systems behave correctly under failure ( i.e automatically, not manually).
 
@@ -23,8 +23,8 @@ In doing so, Chaos becomes an integral part of how we build and run software: <b
 
 ## Where Chaos Becomes Automated
 
-**1. In CI/CD Pipelines (Shift-Left Chaos)
-We embed chaos into deployment pipelines.
+**1. In CI/CD Pipelines (Shift-Left Chaos)** <br>
+We embed chaos into deployment pipelines. <br>
 What we do: <br>
 After deployment → trigger chaos experiment <br>
 Validate system health automatically<br>
@@ -33,7 +33,23 @@ Validate system health automatically<br>
 Example: 
 Deploy → Run Chaos Test → Check SLOs → Promote / Rollback
 ```
+Tools we use: Chaos Mesh (Kubernetes-native), Gremlin, LitmusChaos
 
+**2. Scheduled Chaos (GameDays → Automation)** <br>
+Instead of manual “GameDays”, we schedule experiments. <br>
+*What we do: * <br>
+Run chaos every week / day<br>
+Target specific services<br>
+Rotate failure scenarios<br>
+```bash
+Example:
+Monday → kill pods
+Wednesday → inject latency
+Friday → simulate DB lag
+```
+
+
+-------------
 ------------
 Most developers use Git daily without really knowing what's happening under the hood. Understanding Git's object model will make you a significantly better developer — you'll stop fearing rebases and actually understand what's happening when things go wrong.
 
