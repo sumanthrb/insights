@@ -6,6 +6,8 @@ tags: [docker, devops, tooling]
 excerpt: "Your 'works on my machine' problem is solvable. Here's the setup that actually works."
 ---
 
+![fine-tune Diagram]({{ 'images/DevOpsTools.png' | relative_url }})
+
 
 -----
 
