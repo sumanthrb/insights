@@ -22,15 +22,17 @@ CI/CD tooling is required because it turns software delivery from a fragile, man
 
 ---
 Today, there are countless CI/CD tools available—and comparing them isn’t straightforward. At a glance, platforms like GitHub Actions, GitLab CI/CD, and Jenkins all appear to do the same thing: <br>
-Build → Test → Deploy <br>
+```bash
+Build → Test → Deploy
+```
 But beneath the surface, they differ significantly in: <br>
-Architecture<br>
-Execution model<br>
-Integration depth<br>
-Operational overhead<br>
-These differences don’t usually show up in small setups—they become critical as systems scale.
+1. Architecture<br>
+2. Execution model<br>
+3. Integration depth<br>
+4. Operational overhead<br>
+These differences don’t usually show up in small setups, they become critical as systems scale.
 
-That’s why comparing CI/CD tools isn’t optional—it’s essential to identify what truly fits your environment, constraints, and long-term engineering goal
+That’s why comparing CI/CD tools isn’t optional; it’s essential to identify what truly fits your environment, constraints, and long-term engineering goal
 
 ----
 
