@@ -6,6 +6,8 @@ tags: [docker, devops, tooling]
 excerpt: "CI/CD pipelines are the backbone of modern software delivery. But with so many tools available, the real challenge isn’t how to build pipelines."
 ---
 
+---
+
 CI/CD tooling matters because it turns software delivery from a fragile, manual process into a fast, reliable, and scalable system.
 
 | S.No | Why CI/CD Tooling Matters | Impact  |
