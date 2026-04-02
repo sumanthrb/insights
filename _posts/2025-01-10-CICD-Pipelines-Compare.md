@@ -2,7 +2,7 @@
 layout: post
 title: "CI/CD Pipelines: Choosing the Right Tool for Modern Engineering"
 date: 2025-01-10
-tags: [docker, devops, tooling]
+tags: [DevOps ]
 excerpt: "CI/CD pipelines are the backbone of modern software delivery. But with so many tools available, the real challenge isn’t how to build pipelines."
 ---
 
@@ -32,7 +32,7 @@ But beneath the surface, they differ significantly in: <br>
 4. Operational overhead<br>
 These differences don’t usually show up in small setups, they become critical as systems scale.
 
-That’s why comparing CI/CD tools isn’t optional; it’s essential to identify what truly fits your environment, constraints, and long-term engineering goal
+That’s why comparing CI/CD tools isn’t optional; it’s essential to identify what truly fits our environment, constraints, and long-term engineering goal
 
 ----
 
@@ -44,6 +44,6 @@ That’s why comparing CI/CD tools isn’t optional; it’s essential to identif
 **Quick Takeaway !**
 CI/CD tools don’t just automate delivery, they shape how our teams build, ship, and operate the software.
 
-The best tool is not the most powerful one;  It’s the one that fits your ecosystem with the least friction
+The best tool is not the most powerful one;  It’s the one that fits our ecosystem with the least friction
 
 -----
