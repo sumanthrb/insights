@@ -6,7 +6,7 @@ tags: [docker, devops, tooling]
 excerpt: "CI/CD pipelines are the backbone of modern software delivery. But with so many tools available, the real challenge isn’t how to build pipelines."
 ---
 
-## The Value of CI/CD Tooling
+## Why CI/CD Tooling ?
 
 CI/CD tooling is required because it turns software delivery from a fragile, manual process into a fast, reliable, and scalable system.
 
@@ -21,7 +21,7 @@ CI/CD tooling is required because it turns software delivery from a fragile, man
 | 7 | Security & Compliance | Automates scans, policies, and approvals → safer and compliant releases..|
 
 ---
-Today, there are countless CI/CD tools available—and comparing them isn’t straightforward. At a glance, platforms like GitHub Actions, GitLab CI/CD, and Jenkins all appear to do the same thing: <br>
+Today, there are countless CI/CD tools available and comparing them isn’t straightforward. At a glance, platforms like GitHub Actions, GitLab CI/CD, and Jenkins all appear to do the same thing: <br>
 ```bash
 Build → Test → Deploy
 ```
