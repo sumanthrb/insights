@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RAG vs Fine-tuning: When to Use Which (and When Neither)"
+title: "RAG vs Fine-tuning: When to Use Which one "
 date: 2025-02-03
 tags: [RAG,intelligent-systems]
 description: "A practical decision framework for choosing between Retrieval-Augmented Generation and fine-tuning;  built from real production experience."
